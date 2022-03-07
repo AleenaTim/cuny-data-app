@@ -6,11 +6,10 @@ import plotly.express as px
 import plotly.graph_objects as go
 import plotly.io as pio
 from bs4 import BeautifulSoup
-
+import requests
 
 def app():
     #markdown syntax
-
     df = pd.read_csv('college_data.csv')
     selected_college = st.sidebar.selectbox('Type of College', ['CUNY'])
     four_year = sorted(df.college_name.unique())
@@ -35,6 +34,7 @@ def app():
                         "value": "Tuition Cost (Annual)",
                         "variable": "In-State/Out-of-State:",
                 },
+        
     )
     fig.update_layout(
         font_family="Georgia",
@@ -44,6 +44,7 @@ def app():
         title_font_color="black",
         legend_title_font_color="black"
     )
+    
 
     
 
@@ -52,10 +53,13 @@ def app():
     
     
 
-    baseurl = 'https://www.niche.com/colleges/search/best-colleges/'
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0'
-    }
+    
+
+
+
+
+
+
     '''
     import streamlit as st
     from scrape import getData

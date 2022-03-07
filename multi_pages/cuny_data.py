@@ -18,17 +18,6 @@ def app():
     df = pd.read_csv('college_data.csv')
     df = df[df.years > 2]
 
-    #df = pd.DataFrame({'college_name': ["Doctorate Degree",
-    #                            "Master's Degree",
-    #                            "Bachelor's Degree",
-    #                            "Associate Degree",
-    #                            "Some college, no degree",
-    #                            "Hight School",
-    #                            "9th 12th(no degree)",
-    #                            "Less Than 9th college_name"],
-    #                'sat_ela_min': [91, 69, 54, 38, 35, 29, 22, 21],
-    #                'sat_ela_max': [151, 99, 84, 56, 53, 47, 37, 34]})
-
     sat_ela_min = list(map(lambda y: str(y), df['sat_ela_min']))
     sat_ela_max = list(map(lambda y: str(y), df['sat_ela_max']))
 
@@ -88,7 +77,7 @@ def app():
                                 x = df['college_name'],
                                 marker = dict(color = '#CC5600', size = 14),
                                 mode = 'markers+text',
-                                text = sat_ela_min,
+                                text = sat_math_min,
                                 textposition = 'middle left',
                                 textfont = {'color': '#CC5600'},
                                 name = 'Woman'))
@@ -97,7 +86,7 @@ def app():
                                 x = df['college_name'],
                                 marker = dict(color = '#237266', size = 14),
                                 mode = 'markers+text',
-                                text = sat_ela_max,
+                                text = sat_math_max,
                                 textposition = 'middle right',
                                 textfont = {'color': '#237266'},
                                 name = 'sat_math_max'))
@@ -110,6 +99,30 @@ def app():
         fig.update_yaxes(range = [200,800])
 
         st.plotly_chart(fig) 
+
+
+    fig2 = go.Figure(data=[go.Table(
+        header=dict(values=list(df[['college_name', 'sat_req', 'gpa_req']]),
+                    fill_color='paleturquoise',
+                    align='left',
+                    height = 50,
+                    font=dict(size=26),
+                    ),
+        cells=dict(values=[df.college_name, df.sat_req, df.gpa_req],
+                height = 50,
+                fill_color='lavender',
+                align='left',
+                font=dict(size=20),
+                ))
+    ])
+    fig2.update_layout(title = "SAT and GPA Requirements",
+                        width = 1120,
+                        height = 1720,
+                        showlegend = False)
+
+    st.plotly_chart(fig2)
+
+
 
     # Pie chart, where the slices will be ordered and plotted counter-clockwise:
     
