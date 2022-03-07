@@ -1,8 +1,7 @@
 import streamlit as st
 import pandas as pd
 from multiapp import MultiApp
-from multi_pages import cuny_data, cuny_tuition # import your app modules here
-
+from multi_pages import cuny_data, cuny_tuition, cuny_home # import your app modules here
 
 
 app = MultiApp()
@@ -13,6 +12,7 @@ st.markdown("""
 
 df = pd.read_csv('college_data.csv')
 # Add all your application here
+app.add_app("CUNY Home Page", cuny_home.app)
 app.add_app("CUNY Tuition", cuny_tuition.app)
 app.add_app("CUNY Test Scores", cuny_data.app)
 
