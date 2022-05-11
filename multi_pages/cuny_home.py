@@ -32,15 +32,15 @@ def app():
         rb = rb.get_text()
         bks = soup.find('div',class_='stat-title',text="Books and Supplies").find_previous()
         bks = bks.get_text()
-        net = soup.find('div',class_='stat-title',text="2019 Value").find_previous()
+        net = soup.find('div',class_='stat-title',text="2020 Value").find_previous()
         net = net.get_text()
-        retention_rate = soup.find('div',class_='stat-title',text="2019 Retention Rate").find_previous()
+        retention_rate = soup.find('div',class_='stat-title',text="2020 Retention Rate").find_previous()
         retention_rate = retention_rate.get_text()
         data_matrix = [[college_selected + ' College', 'Annual Cost'],
                ['Room and Board', rb],
                ['Books and Supplies', bks],
                ['Net Price (After Grants and Loans)', net],
-               ['Retention Rate (2019)', retention_rate]]
+               ['Retention Rate (2020)', retention_rate]]
         table = ff.create_table(data_matrix, index=True)
         # Make text size larger
         for i in range(len(table.layout.annotations)):
@@ -69,9 +69,9 @@ def app():
         rb = rb.get_text()
         bks = soup.find('div',class_='stat-title',text="Books and Supplies").find_previous()
         bks = bks.get_text()
-        net = soup.find('div',class_='stat-title',text="2019 Value").find_previous()
+        net = soup.find('div',class_='stat-title',text="2020 Value").find_previous()
         net = net.get_text()
-        retention_rate = soup.find('div',class_='stat-title',text="2019 Retention Rate").find_previous()
+        retention_rate = soup.find('div',class_='stat-title',text="2020 Retention Rate").find_previous()
         retention_rate = retention_rate.get_text()
 
          
@@ -79,7 +79,7 @@ def app():
                ['Room and Board', rb],
                ['Books and Supplies', bks],
                ['Net Price (After Grants and Loans)', net],
-               ['Retention Rate (2019)', retention_rate]]
+               ['Retention Rate (2020)', retention_rate]]
         table = ff.create_table(data_matrix, index=True)
         # Make text size larger
         for i in range(len(table.layout.annotations)):
@@ -108,15 +108,15 @@ def app():
         rb = rb.get_text()
         bks = soup.find('div',class_='stat-title',text="Books and Supplies").find_previous()
         bks = bks.get_text()
-        net = soup.find('div',class_='stat-title',text="2019 Value").find_previous()
+        net = soup.find('div',class_='stat-title',text="2020 Value").find_previous()
         net = net.get_text()
-        retention_rate = soup.find('div',class_='stat-title',text="2019 Retention Rate").find_previous()
+        retention_rate = soup.find('div',class_='stat-title',text="2020 Retention Rate").find_previous()
         retention_rate = retention_rate.get_text()
         data_matrix = [[college_selected + ' College', 'Annual Cost'],
                ['Room and Board', rb],
                ['Books and Supplies', bks],
                ['Net Price (After Grants and Loans)', net],
-               ['Retention Rate (2019)', retention_rate]]
+               ['Retention Rate (2020)', retention_rate]]
         table = ff.create_table(data_matrix, index=True)
         # Make text size larger
         for i in range(len(table.layout.annotations)):
@@ -145,15 +145,15 @@ def app():
         rb = rb.get_text()
         bks = soup.find('div',class_='stat-title',text="Books and Supplies").find_previous()
         bks = bks.get_text()
-        net = soup.find('div',class_='stat-title',text="2019 Value").find_previous()
+        net = soup.find('div',class_='stat-title',text="2020 Value").find_previous()
         net = net.get_text()
-        retention_rate = soup.find('div',class_='stat-title',text="2019 Retention Rate").find_previous()
+        retention_rate = soup.find('div',class_='stat-title',text="2020 Retention Rate").find_previous()
         retention_rate = retention_rate.get_text()
         data_matrix = [['City College of Technology', 'Annual Cost'],
                ['Room and Board', rb],
                ['Books and Supplies', bks],
                ['Net Price (After Grants and Loans)', net],
-               ['Retention Rate (2019)', retention_rate]]
+               ['Retention Rate (2020)', retention_rate]]
         table = ff.create_table(data_matrix, index=True)
         # Make text size larger
         for i in range(len(table.layout.annotations)):
@@ -181,15 +181,15 @@ def app():
         rb = rb.get_text()
         bks = soup.find('div',class_='stat-title',text="Books and Supplies").find_previous()
         bks = bks.get_text()
-        net = soup.find('div',class_='stat-title',text="2019 Value").find_previous()
+        net = soup.find('div',class_='stat-title',text="2020 Value").find_previous()
         net = net.get_text()
-        retention_rate = soup.find('div',class_='stat-title',text="2019 Retention Rate").find_previous()
+        retention_rate = soup.find('div',class_='stat-title',text="2020 Retention Rate").find_previous()
         retention_rate = retention_rate.get_text()
         data_matrix = [[college_selected, 'Annual Cost'],
                ['Room and Board', rb],
                ['Books and Supplies', bks],
                ['Net Price (After Grants and Loans)', net],
-               ['Retention Rate (2019)', retention_rate]]
+               ['Retention Rate (2020)', retention_rate]]
         table = ff.create_table(data_matrix, index=True)
         # Make text size larger
         for i in range(len(table.layout.annotations)):
@@ -216,15 +216,15 @@ def app():
         rb = rb.get_text()
         bks = soup.find('div',class_='stat-title',text="Books and Supplies").find_previous()
         bks = bks.get_text()
-        net = soup.find('div',class_='stat-title',text="2019 Value").find_previous()
+        net = soup.find('div',class_='stat-title',text="2020 Value").find_previous()
         net = net.get_text()
-        retention_rate = soup.find('div',class_='stat-title',text="2019 Retention Rate").find_previous()
+        retention_rate = soup.find('div',class_='stat-title',text="2020 Retention Rate").find_previous()
         retention_rate = retention_rate.get_text()
         data_matrix = [[college_selected, 'Annual Cost'],
                ['Room and Board', rb],
                ['Books and Supplies', bks],
                ['Net Price (After Grants and Loans)', net],
-               ['Retention Rate (2019)', retention_rate]]
+               ['Retention Rate (2020)', retention_rate]]
         table = ff.create_table(data_matrix, index=True)
         # Make text size larger
         for i in range(len(table.layout.annotations)):
@@ -251,15 +251,15 @@ def app():
         rb = rb.get_text()
         bks = soup.find('div',class_='stat-title',text="Books and Supplies").find_previous()
         bks = bks.get_text()
-        net = soup.find('div',class_='stat-title',text="2019 Value").find_previous()
+        net = soup.find('div',class_='stat-title',text="2020 Value").find_previous()
         net = net.get_text()
-        retention_rate = soup.find('div',class_='stat-title',text="2019 Retention Rate").find_previous()
+        retention_rate = soup.find('div',class_='stat-title',text="2020 Retention Rate").find_previous()
         retention_rate = retention_rate.get_text()
         data_matrix = [[college_selected, 'Annual Cost'],
                ['Room and Board', rb],
                ['Books and Supplies', bks],
                ['Net Price (After Grants and Loans)', net],
-               ['Retention Rate (2019)', retention_rate]]
+               ['Retention Rate (2020)', retention_rate]]
         table = ff.create_table(data_matrix, index=True)
         # Make text size larger
         for i in range(len(table.layout.annotations)):
@@ -286,15 +286,15 @@ def app():
         rb = rb.get_text()
         bks = soup.find('div',class_='stat-title',text="Books and Supplies").find_previous()
         bks = bks.get_text()
-        net = soup.find('div',class_='stat-title',text="2019 Value").find_previous()
+        net = soup.find('div',class_='stat-title',text="2020 Value").find_previous()
         net = net.get_text()
-        retention_rate = soup.find('div',class_='stat-title',text="2019 Retention Rate").find_previous()
+        retention_rate = soup.find('div',class_='stat-title',text="2020 Retention Rate").find_previous()
         retention_rate = retention_rate.get_text()
         data_matrix = [[college_selected, 'Annual Cost'],
                ['Room and Board', rb],
                ['Books and Supplies', bks],
                ['Net Price (After Grants and Loans)', net],
-               ['Retention Rate (2019)', retention_rate]]
+               ['Retention Rate (2020)', retention_rate]]
         table = ff.create_table(data_matrix, index=True)
         # Make text size larger
         for i in range(len(table.layout.annotations)):
@@ -321,15 +321,15 @@ def app():
         rb = rb.get_text()
         bks = soup.find('div',class_='stat-title',text="Books and Supplies").find_previous()
         bks = bks.get_text()
-        net = soup.find('div',class_='stat-title',text="2019 Value").find_previous()
+        net = soup.find('div',class_='stat-title',text="2020 Value").find_previous()
         net = net.get_text()
-        retention_rate = soup.find('div',class_='stat-title',text="2019 Retention Rate").find_previous()
+        retention_rate = soup.find('div',class_='stat-title',text="2020 Retention Rate").find_previous()
         retention_rate = retention_rate.get_text()
         data_matrix = [[college_selected, 'Annual Cost'],
                ['Room and Board', rb],
                ['Books and Supplies', bks],
                ['Net Price (After Grants and Loans)', net],
-               ['Retention Rate (2019)', retention_rate]]
+               ['Retention Rate (2020)', retention_rate]]
         table = ff.create_table(data_matrix, index=True)
         # Make text size larger
         for i in range(len(table.layout.annotations)):
@@ -356,15 +356,15 @@ def app():
         rb = rb.get_text()
         bks = soup.find('div',class_='stat-title',text="Books and Supplies").find_previous()
         bks = bks.get_text()
-        net = soup.find('div',class_='stat-title',text="2019 Value").find_previous()
+        net = soup.find('div',class_='stat-title',text="2020 Value").find_previous()
         net = net.get_text()
-        retention_rate = soup.find('div',class_='stat-title',text="2019 Retention Rate").find_previous()
+        retention_rate = soup.find('div',class_='stat-title',text="2020 Retention Rate").find_previous()
         retention_rate = retention_rate.get_text()
         data_matrix = [[college_selected, 'Annual Cost'],
                ['Room and Board', rb],
                ['Books and Supplies', bks],
                ['Net Price (After Grants and Loans)', net],
-               ['Retention Rate (2019)', retention_rate]]
+               ['Retention Rate (2020)', retention_rate]]
         table = ff.create_table(data_matrix, index=True)
         # Make text size larger
         for i in range(len(table.layout.annotations)):
